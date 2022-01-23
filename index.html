@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addidas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section>
+        <div class="cir"></div>
+        <header>
+            <a href="#" class="logo"><img src="addilogo.png" alt="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Whats New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2> It's not Just Shoes <br>It's <span>addidas</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis veniam porro non. Fugit atque
+                    totam incidunt obcaecati id quibusdam tempora porro! Perferendis asperiores laborum consequatur hic
+                    doloremque repellendus, ex placeat repudiandae nobis, sapiente quod dolorum deserunt! Suscipit fugit
+                    veritatis laborum tempora consequuntur, mollitia iusto enim, tempore esse, eveniet laboriosam
+                    ducimus.</p>
+                    <a href="#">learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="shoe22a.png" class="addi">
+            </div>
+        </div>
+        <ul class="thumb">
+<li><img src="tb22a .png" onclick="imgSlider('shoe22a.png');changeCirclecolor('#017143')"></li>
+<li><img src="tmb11a .png" onclick="imgSlider('shoe11a.png');changeCirclecolor('#c0c0c0')"></li>
+<li><img src="tmb33.png" onclick="imgSlider('shoe33.png');changeCirclecolor('#d752b1')"></li>
+</ul>
+<ul class="social">
+    <li><a href=""><img src="twit.png"></a></li>
+    <li><a href=""><img src="insta.png"></a></li>
+    <li><a href=""><img src="fb.png"></a></li>
+</ul>
+    </section>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.addi').src = anything;
+        
+    }
+    function changeCirclecolor(color){
+        const circle = document.querySelector('.cir');
+        circle.style.background = color;
+    }
+</script>
+
+</body>
+
+</html>
